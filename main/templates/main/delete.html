@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+{% block title %} Delete New List {% endblock %}
+{% block content %}
+     <h3>Delete Page</h3>
+     <form method="post" action="/delete/" class="form-group">
+         {% csrf_token %}
+         <div class="input-group mb-3">
+                 <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+         {{form.name}}</div>
+
+     </form>
+{% endblock %}

@@ -1,0 +1,210 @@
+{% load static %}
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/c/home.css'%}">
+    <script src="{% static 'js/script.js' %}"></script>
+
+	<title>{% block title %}YufloriYa{% endblock %}</title>
+<style>
+
+
+     @font-face {
+         font-family: MagicalSpring;
+         src: url('../../static/fonts/magicalspring.ttf');
+    }
+     h1 {
+         font-family: MagicalSpring, 'Comic Sans MS', cursive;
+         font-size: 250%;
+   }
+     .right_block h1 {
+         font-family: MagicalSpring, 'Comic Sans MS', cursive;
+         font-size: 400%;
+         font-weight: 600;
+   }
+     .left_text_block h1 {
+         font-family: MagicalSpring, 'Comic Sans MS', cursive;
+         font-size: 400%;
+         font-weight: 600;
+   }
+
+
+     @font-face {
+         font-family: Boby;
+         src: url('../../static/fonts/Boby.otf');
+    }
+     .text-header h3 {
+         font-family: Boby, 'Comic Sans MS', cursive;
+         font-size: 40%;
+     }
+     .btn {
+         font-family: Boby, 'Comic Sans MS', cursive;
+         font-size: 130%;
+     }
+
+
+     @font-face {
+        font-family: Kopenhagen;
+        src: url('../../static/fonts/Kopenhagen.ttf');
+    }
+
+
+     @font-face {
+        font-family: IniyaDisplay;
+        src: url('../../static/fonts/IniyaDisplay.otf');
+    }
+     .nav-menu{
+         font-family: IniyaDisplay, 'Comic Sans MS', cursive;
+         font-size: 50%;
+         text-transform: uppercase;
+   }
+
+     @font-face {
+        font-family: Quattrocento-Regular;
+        src: url('../../static/fonts/Quattrocento-Regular.ttf');
+    }
+     .right_block h3{
+         font-family: Quattrocento-Regular, 'Comic Sans MS', monospace ;
+         font-size: 100%;
+     }
+     .left_text_block h3{
+         font-family: Quattrocento-Regular, 'Comic Sans MS', monospace ;
+         font-size: 100%;
+     }
+
+     @font-face {
+        font-family: Quattrocento-Bold;
+        src: url('../../static/fonts/Quattrocento-Bold.ttf');
+    }
+     .right_block h4{
+         font-family: Quattrocento-Bold, 'Comic Sans MS', monospace ;
+         font-size: 80%;
+     }
+     .left_text_block h4{
+         font-family: Quattrocento-Bold, 'Comic Sans MS', monospace ;
+         font-size: 80%;
+     }
+
+ @font-face {
+        font-family: PinyonScript-Regular;
+        src: url('../../static/fonts/PinyonScript-Regular.ttf');
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="nav-menu">
+    <div class="logo">
+        <a href=""><img src="../../static/img/logo.png" alt="Home" width="55px" height="55px"></a>
+    </div>
+    <div class="nav">
+        <div class="dropdown">
+            <div class="dropbtn">
+                <a href="/shop">Shop</a>
+            </div>
+            <div class="dropdown-content">
+                <div id="column-1">
+                    <a href="/shop"><b>FLOWERS</b></a>
+                    <a href="/shop">Bouquets</a>
+                    <a href="/shop">Vased arrangements</a>
+                     <a href="/shop">The Giving Box</a>
+                    </div>
+                <div id="column-2">
+                    <a href="/shop"><b>PLANTS</b></a>
+                    <a href="/shop">Houseplants</a>
+                    <a href="/shop">Orchids</a>
+                    <a href="/shop">Ikebana</a>
+                </div>
+                <div id="column-3">
+                    <a href="/shop"><b>MISC</b></a>
+                    <a href="/shop">Vases</a>
+                    <a href="/shop">Tools</a>
+                    <a href="/shop">Merch</a>
+                </div>
+            </div>
+        </div>
+        <a href="/services">Services</a>
+        <a href="/origin-story">Origin story</a>
+        <a href="/process">Process</a>
+        <a href="/philosophy">Philosophy</a>
+        <a href="/inquiries">Inquiries</a>
+    </div>
+</div>
+
+<header class="header">
+    <div class="text-header">
+     <h1>Flower to the people!</h1>
+     <h3>You are one with the creative power that sustains all life.</h3>
+    </div>
+</header>
+
+<main>
+   <aside class="left_block">
+       <div class="brd">
+            <img src="../../static/img/2.jpg">
+       </div>
+   </aside>
+    <aside class="center">
+   </aside>
+    <div class="right_block">
+        <div class="bord">
+            <section class="int">
+                <h4>INSPIRED BY NATURE</h4>
+                <h1>The Unlikely Florist blurs the lines between performance, floristry and fine art.</h1>
+                <h3>We bring a timeless sensibility and sustainable approach to our work. From ready-to-ship arrangements and bouquets, to custom pieces for weddings and events, our flowers celebrate the romance of nature's original art form.</h3>
+            </section>
+        </div>
+    </div>
+</main>
+<main>
+    <aside class="left_text_block">
+        <div class="bord">
+            <section class="int">
+                <h4>MADE WITH LOVE</h4>
+                <h1>Arranged by our team, inspired by you</h1>
+                <h3>Using only the freshest stems from select growers, next day delivery, and two-day shipping, we take we take the guesswork out of sending flowers .</h3>
+            </section>
+        </div>
+   </aside>
+    <aside class="center2">
+   </aside>
+    <div class="right_img_block">
+        <div class="brd">
+            <img src="../../static/img/1.jpg">
+       </div>
+    </div>
+</main>
+<main>
+    <div class="otstup">
+        <div class="triplebord">
+            <aside class="left">
+                <div class="btn"><a href="/shop">Orchids</a></div>
+            </aside>
+        </div>
+    </div>
+    <div class="otstup">
+        <div class="triplebord">
+            <div class="center3">
+                <div class="btn"><a href="/shop">Houseplant</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="otstup">
+        <div class="triplebord">
+            <aside class="right">
+                <div class="btn"><a href="/shop">Bouquets</a></div>
+            </aside>
+        </div>
+    </div>
+</main>
+</body>
+</html>

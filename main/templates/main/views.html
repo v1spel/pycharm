@@ -1,0 +1,29 @@
+{% extends "main/base.html" %}
+{% block title %}
+Views
+{% endblock %}
+{% block content %}
+<style>
+    .ssilka{
+        text-decoration: none;
+        display:block;
+        color: #000000;
+    }
+    .ssilka a{
+        text-decoration: none;
+        display:block;
+        color: #000000;
+    }
+    .ssilka a:hover{
+        text-decoration: none;
+        display:block;
+        color: #ffffff;
+        -webkit-text-stroke: 1px #000000;
+    }
+</style>
+    {% for td in user.todolist.all %}
+        <div class = ssilka>
+	<h3><a href="/{{td.id}}">{{td.name}}</a></h3>
+        </div>
+    {% endfor %}
+{% endblock %}

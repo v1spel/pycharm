@@ -1,0 +1,185 @@
+{% load static %}
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/c/home.css'%}">
+    <link rel="stylesheet" href="{% static 'css/shop/shop.css'%}">
+
+	<title>{% block title %}Shop{% endblock %}</title>
+<style>
+
+
+     @font-face {
+         font-family: MagicalSpring;
+         src: url('../../static/fonts/magicalspring.ttf');
+    }
+     h1 {
+         font-family: MagicalSpring, 'Comic Sans MS', cursive;
+         font-size: 700%;
+         color: #ffffff;
+   }
+
+
+
+     @font-face {
+         font-family: Boby;
+         src: url('../../static/fonts/Boby.otf');
+    }
+     .butn {
+         font-family: Boby, 'Comic Sans MS', cursive;
+         font-size: 90%;
+
+     }
+
+
+     @font-face {
+        font-family: Kopenhagen;
+        src: url('../../static/fonts/Kopenhagen.ttf');
+    }
+
+
+     @font-face {
+        font-family: IniyaDisplay;
+        src: url('../../static/fonts/IniyaDisplay.otf');
+    }
+     .nav-menu{
+         font-family: IniyaDisplay, 'Comic Sans MS', cursive;
+         font-size: 50%;
+         text-transform: uppercase;
+         text-align-all: center;
+   }
+
+     p{
+         font-family: IniyaDisplay, 'Comic Sans MS', cursive;
+         font-size: 220%;
+         text-transform: uppercase;
+         display: inline-block;
+         margin-right: 165px;
+   }
+
+     @font-face {
+        font-family: Quattrocento-Regular;
+        src: url('../../static/fonts/Quattrocento-Regular.ttf');
+    }
+      .shopheader h3{
+          font-family: Boby, 'Comic Sans MS', monospace;
+         font-size: 180%;
+          color: #FFFFFF;
+     }
+
+     @font-face {
+        font-family: Quattrocento-Bold;
+        src: url('../../static/fonts/Quattrocento-Bold.ttf');
+    }
+     .right_block h4{
+         font-family: Quattrocento-Bold, 'Comic Sans MS', monospace ;
+         font-size: 80%;
+     }
+     .left_text_block h4{
+         font-family: Quattrocento-Bold, 'Comic Sans MS', monospace ;
+         font-size: 80%;
+     }
+
+ @font-face {
+        font-family: PinyonScript-Regular;
+        src: url('../../static/fonts/PinyonScript-Regular.ttf');
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="nav-menu">
+    <div class="logo">
+        <a href="/"><img src="../../static/img/logo.png" alt="Home" width="55px" height="55px"></a>
+    </div>
+    <div class="nav">
+        <div class="dropdown">
+            <div class="dropbtn">
+                <a href="/shop">Shop</a>
+            </div>
+            <div class="dropdown-content">
+                <div id="column-1">
+                    <a href="/shop"><b>FLOWERS</b></a>
+                    <a href="/shop">Bouquets</a>
+                    <a href="/shop">Vased arrangements</a>
+                     <a href="/shop">The Giving Box</a>
+                    </div>
+                <div id="column-2">
+                    <a href="/shop"><b>PLANTS</b></a>
+                    <a href="/shop">Houseplants</a>
+                    <a href="/shop">Orchids</a>
+                    <a href="/shop">Ikebana</a>
+                </div>
+                <div id="column-3">
+                    <a href="/shop"><b>MISC</b></a>
+                    <a href="/shop">Vases</a>
+                    <a href="/shop">Tools</a>
+                    <a href="/shop">Merch</a>
+                </div>
+            </div>
+        </div>
+        <a href="/services">Services</a>
+        <a href="/origin-story">Origin story</a>
+        <a href="/process">Process</a>
+        <a href="/philosophy">Philosophy</a>
+        <a href="/inquiries">Inquiries</a>
+    </div>
+</div>
+
+<header class="shopheader">
+    <div class="headfon">
+        <h1>Fresh Flower Bouquets</h1>
+
+    <h3>Ahh the bouquet, the classic staple of The YufloriYa.</h3>
+    <h3>Our bouquets are custom made with ever-changing seasonal blooms we source locally. Each one is unique and comes hand-wrapped in burlap for delivery. </h3>
+    <h3>No matter what you choose, you’re in for a long-lasting flower arrangement that will take on many beautiful moments throughout its life.</h3>
+</div>
+</header>
+<main>
+
+    <div class="otstup">
+        <div class="bordshop">
+        <aside class="photo1"></aside>
+        <p>95$</p>
+        <div class="blockobsh">
+        <div class="butn">
+            <a href="/order">Order</a>
+        </div>
+    </div>
+            </div>
+ </div>
+    <div class="otstup">
+        <div class="bordshop">
+        <div class="photo2"></div>
+        <p>120$</p>
+        <div class="blockobsh">
+        <div class="butn">
+            <a href="/order">Order</a>
+        </div>
+    </div>
+            </div>
+         </div>
+    <div class="otstup">
+        <div class="bordshop">
+        <aside class="photo3"></aside>
+        <p>180$</p>
+        <div class="blockobsh">
+        <div class="butn">
+            <a href="/order">Order</a>
+        </div>
+            </div>
+    </div>
+    </div>
+</main>
+<main>
+<div class="pad"></div>
+</main>
+</body>
+</html>
